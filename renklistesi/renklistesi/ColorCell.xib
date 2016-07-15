@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="ufonts.com_bryant-bold.ttf">
+            <string>Bryant-Bold</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ColorCell" rowHeight="105" id="qPe-Dm-pbG" customClass="ColorCell" customModule="Bu_Ne_Renk" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="528" height="105"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qPe-Dm-pbG" id="9nH-ic-UWa">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7MB-G2-wxn">
+                        <rect key="frame" x="0.0" y="0.0" width="528" height="103"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lqu-pJ-dVm">
+                        <rect key="frame" x="25" y="41" width="85" height="21"/>
+                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gT-54-Y7i">
+                        <rect key="frame" x="8" y="41" width="512" height="21"/>
+                        <fontDescription key="fontDescription" name="Bryant-Bold" family="Bryant" pointSize="19"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="Lqu-pJ-dVm" firstAttribute="leading" secondItem="9nH-ic-UWa" secondAttribute="leadingMargin" constant="24" id="49M-fG-hZU"/>
+                    <constraint firstAttribute="centerY" secondItem="Lqu-pJ-dVm" secondAttribute="centerY" constant="0.5" id="BLK-lg-nz3"/>
+                    <constraint firstItem="7gT-54-Y7i" firstAttribute="leading" secondItem="9nH-ic-UWa" secondAttribute="leadingMargin" id="DId-MW-zBp"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="7MB-G2-wxn" secondAttribute="bottom" constant="-9" id="Ew5-9v-C7f"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="7gT-54-Y7i" secondAttribute="trailing" id="Oww-5f-HOi"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="7MB-G2-wxn" secondAttribute="trailing" constant="-30" id="byb-CQ-Bxg"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="7MB-G2-wxn" secondAttribute="bottom" constant="-7" id="elA-zz-5F6"/>
+                    <constraint firstItem="7MB-G2-wxn" firstAttribute="leading" secondItem="9nH-ic-UWa" secondAttribute="leadingMargin" constant="-30" id="oiv-8n-tXS"/>
+                    <constraint firstItem="7MB-G2-wxn" firstAttribute="top" secondItem="9nH-ic-UWa" secondAttribute="topMargin" constant="-8" id="qdL-JR-9Ia"/>
+                    <constraint firstAttribute="centerY" secondItem="7gT-54-Y7i" secondAttribute="centerY" constant="0.5" id="tAY-bZ-Yli"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Ew5-9v-C7f"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="color" destination="Lqu-pJ-dVm" id="QV2-bb-TMT"/>
+                <outlet property="panel" destination="7MB-G2-wxn" id="kS6-dM-LwU"/>
+                <outlet property="title" destination="7gT-54-Y7i" id="dot-aZ-IBX"/>
+            </connections>
+            <point key="canvasLocation" x="-1" y="318.5"/>
+        </tableViewCell>
+    </objects>
+</document>
